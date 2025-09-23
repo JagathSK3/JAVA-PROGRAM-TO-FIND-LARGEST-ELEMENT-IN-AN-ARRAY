@@ -1,4 +1,4 @@
-# JAVA-PROGRAM-TO-FIND-LARGEST-ELEMENT-IN-AN-ARRAY
+<img width="1453" height="744" alt="image" src="https://github.com/user-attachments/assets/a486b8e0-450c-4125-8877-dcd1b0673bc3" /># JAVA-PROGRAM-TO-FIND-LARGEST-ELEMENT-IN-AN-ARRAY
 
 ## AIM:
 To find the largest element in an array using java programming language.
@@ -60,9 +60,35 @@ o After finishing, click File > Exit to close Eclipse IDE.
 
 
 ## PROGRAM:
-
-
+```
+import java.util.Scanner;
+public class LargestElement {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+// Input array size
+System.out.print("Enter the number of elements: ");
+int n = sc.nextInt();
+int[] arr = new int[n];
+// Input array elements
+System.out.println("Enter " + n + " numbers:");
+for (int i = 0; i < n; i++) {
+arr[i] = sc.nextInt();
+}
+// Assume first element is the largest
+int largest = arr[0];
+// Compare with other elements
+for (int i = 1; i < n; i++) {
+if (arr[i] > largest) {
+largest = arr[i];
+}
+}
+// Output the result
+System.out.println("The largest element is: " + largest);
+}
+}
+```
 ## OUTPUT:
+<img width="1453" height="744" alt="image" src="https://github.com/user-attachments/assets/55a4e467-e7f0-490b-8ad0-597fe6223f4a" />
 
 
 ## RESULT:
